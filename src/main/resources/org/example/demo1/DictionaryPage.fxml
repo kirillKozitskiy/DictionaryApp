@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="10.0"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.demo1.controller.DictionaryPageController">
+
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+
+    </padding>
+
+    <Label text="Dictionary" style="-fx-font-size: 24px;"/>
+
+
+    <Label fx:id="inputWordToTranslateLabel" text="Word"/>
+    <TextField fx:id="wordToTranslateTextField" promptText="Enter text to translate"/>
+
+    <Button text="translate" onAction="#handlePressToTranslate"/>
+
+    <Label fx:id="displayTranslationLabel" text="Translation will appear here"/>
+    <TextField fx:id="displayTranslationTextField" promptText="Translation will appear here" editable="false"/>
+
+    <Button text="Next Page" onAction="#handleNextPage" />
+</VBox>

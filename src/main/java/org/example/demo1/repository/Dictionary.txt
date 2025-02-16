@@ -1,0 +1,6 @@
+кот cat
+собака dog
+ноутбук laptop
+дверь door
+телефон phone
+город town
