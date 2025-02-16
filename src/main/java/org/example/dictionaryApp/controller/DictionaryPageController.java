@@ -54,7 +54,7 @@ public class DictionaryPageController {
             displayTranslationLabel.setVisible(false);
             inputWordToTranslateLabel.setText("Something went wrong");
         }
-    }//dsfsdf
+    }
 
     @FXML
     private void handleNextPage() throws IOException {
