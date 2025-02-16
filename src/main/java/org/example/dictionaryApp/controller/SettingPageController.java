@@ -1,11 +1,11 @@
-package org.example.demo1.controller;
+package org.example.dictionaryApp.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import org.example.demo1.model.JavaFxApp;
-import org.example.demo1.repository.DictionaryRepository;
-import org.example.demo1.service.DictionaryService;
+import org.example.dictionaryApp.model.JavaFxApp;
+import org.example.dictionaryApp.repository.DictionaryRepository;
+import org.example.dictionaryApp.service.DictionaryService;
 
 import java.io.IOException;
 import java.util.regex.Pattern;

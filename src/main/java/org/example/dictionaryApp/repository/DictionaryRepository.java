@@ -1,4 +1,4 @@
-package org.example.demo1.repository;
+package org.example.dictionaryApp.repository;
 
 public class DictionaryRepository {
 

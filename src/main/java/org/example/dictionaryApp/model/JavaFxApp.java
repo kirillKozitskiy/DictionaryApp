@@ -1,4 +1,4 @@
-package org.example.demo1.model;
+package org.example.dictionaryApp.model;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -32,12 +32,12 @@ public class JavaFxApp extends Application {
     }
 
     public static void showDictionaryPage() throws IOException {
-        Parent root = FXMLLoader.load(JavaFxApp.class.getResource("/org/example/demo1/DictionaryPage.fxml"));
+        Parent root = FXMLLoader.load(JavaFxApp.class.getResource("/org/example/dictionaryApp/DictionaryPage.fxml"));
         Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
         primaryStage.setScene(scene);
     }
     public static void showSecondPage() throws IOException {
-        Parent root = FXMLLoader.load(JavaFxApp.class.getResource("/org/example/demo1/DictionarySettingPage.fxml"));
+        Parent root = FXMLLoader.load(JavaFxApp.class.getResource("/org/example/dictionaryApp/DictionarySettingPage.fxml"));
         Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
 
         primaryStage.setScene(scene);

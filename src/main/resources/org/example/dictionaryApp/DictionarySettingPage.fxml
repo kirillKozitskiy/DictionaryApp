@@ -10,7 +10,7 @@
 <VBox alignment="CENTER" spacing="20.0"
       xmlns="http://javafx.com/javafx/8"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.demo1.controller.SettingPageController">
+      fx:controller="org.example.dictionaryApp.controller.SettingPageController">
 
     <padding>
         <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>

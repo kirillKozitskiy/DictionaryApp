@@ -1,4 +1,4 @@
-package org.example.demo1.service;
+package org.example.dictionaryApp.service;
 
 import java.io.*;
 import java.util.Map;
