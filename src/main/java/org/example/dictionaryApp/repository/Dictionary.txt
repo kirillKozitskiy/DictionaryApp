@@ -4,3 +4,4 @@
 дверь door
 телефон phone
 город town
+дом home

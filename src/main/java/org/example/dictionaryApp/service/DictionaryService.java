@@ -8,9 +8,6 @@ public class DictionaryService {
 
     private Map<String, String> dictionary;
 
-    private String word;
-    private String wordTranslation;
-
     public DictionaryService() {
         dictionary = new TreeMap<String, String>();
     }

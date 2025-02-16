@@ -44,7 +44,8 @@ public class DictionaryPageController {
     private void handlePressToTranslate() throws IOException {
         wordPattern = Pattern.compile("[a-zA-Zа-яА-Я]+");
         if(wordPattern.matcher(wordToTranslateTextField.getText()).matches()) {
-            String tempTranslation = dictionaryService.getTranslationFromDictionary(DictionaryRepository.getFilePath(), wordToTranslateTextField.getText());
+            String tempTranslation
+                    = dictionaryService.getTranslationFromDictionary(DictionaryRepository.getFilePath(), wordToTranslateTextField.getText());
             displayTranslationTextField.setText(tempTranslation);
             displayTranslationLabel.setVisible(true);
             inputWordToTranslateLabel.setText("Word");
