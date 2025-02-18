@@ -31,9 +31,10 @@ public class SettingPageController {
     }
 
     @FXML
-    private void handleConfirmAdding() throws IOException {
+    protected void handleConfirmAdding() throws IOException {
         String key = getTheWordTextField.getText();
         String translation = getTheTranslationTextField.getText();
+
         if(!key.isEmpty() && !translation.isEmpty()) {
             wordPattern = Pattern.compile("[a-zA-Zа-яА-Я]+");
 
@@ -55,7 +56,7 @@ public class SettingPageController {
     }
 
     @FXML
-    private void handleGoToFirstPage() throws IOException {
+    protected void handleGoToFirstPage() throws IOException {
         JavaFxApp.showDictionaryPage();
     }
 

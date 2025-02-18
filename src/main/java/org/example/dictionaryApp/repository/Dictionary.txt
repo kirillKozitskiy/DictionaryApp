@@ -5,3 +5,6 @@
 телефон phone
 город town
 дом home
+дорога road
+машина vehicle
+пк PC
