@@ -29,11 +29,12 @@ public class DictionaryService {
         }catch (IOException e){
             System.out.println(e.getMessage());
         }
-        return "Null";
+        return "That word isn't found";
     }
 
     public void writeDictionaryMapToFile(String fileName) {
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter(fileName, true))) {
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(fileName, true)))
+        {
             for (Map.Entry<String, String> entry : dictionary.entrySet()) {
                 bw.write(entry.getKey() + " " + entry.getValue());
                 bw.newLine();

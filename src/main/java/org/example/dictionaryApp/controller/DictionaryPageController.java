@@ -19,13 +19,11 @@ public class DictionaryPageController {
 
     @FXML
     private Label displayTranslationLabel;
-
     @FXML
     private TextField displayTranslationTextField;
 
     @FXML
     private Label inputWordToTranslateLabel;
-
     @FXML
     private TextField wordToTranslateTextField;
 
@@ -33,7 +31,7 @@ public class DictionaryPageController {
     public void initialize() {
         dictionaryService = new DictionaryService();
     }
-
+    //Non-added method
     @FXML void handleEnterPressed(KeyEvent keyEvent) throws IOException {
         if(keyEvent.getCode() == KeyCode.ENTER) {
             handlePressToTranslate();
@@ -43,13 +41,14 @@ public class DictionaryPageController {
     @FXML
     private void handlePressToTranslate() throws IOException {
         wordPattern = Pattern.compile("[a-zA-Zа-яА-Я]+");
+
         if(wordPattern.matcher(wordToTranslateTextField.getText()).matches()) {
             String tempTranslation
                     = dictionaryService.getTranslationFromDictionary(DictionaryRepository.getFilePath(), wordToTranslateTextField.getText());
             displayTranslationTextField.setText(tempTranslation);
+
             displayTranslationLabel.setVisible(true);
             inputWordToTranslateLabel.setText("Word");
-
         }
         else {
             displayTranslationLabel.setVisible(false);

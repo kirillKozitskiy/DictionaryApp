@@ -32,26 +32,28 @@ public class SettingPageController {
 
     @FXML
     protected void handleConfirmAdding() throws IOException {
-        String key = getTheWordTextField.getText();
+        String word = getTheWordTextField.getText();
         String translation = getTheTranslationTextField.getText();
 
-        if(!key.isEmpty() && !translation.isEmpty()) {
+        if(!word.isEmpty() && !translation.isEmpty()) {
             wordPattern = Pattern.compile("[a-zA-Zа-яА-Я]+");
 
-            if(wordPattern.matcher(key).matches() && wordPattern.matcher(translation).matches()) {
-                dictionaryService.addWordAndTranslation(key, translation);
+            if(wordPattern.matcher(word).matches() && wordPattern.matcher(translation).matches())
+            {
+                dictionaryService.addWordAndTranslation(word, translation);
                 dictionaryService.writeDictionaryMapToFile(DictionaryRepository.getFilePath());
-                enterTranslationLabel.setText("Word was successfully added");
+
+                enterTranslationLabel.setText("Word successfully added");
                 enterWordLabel.setVisible(false);
             }
             else{
                 enterWordLabel.setVisible(false);
-                enterTranslationLabel.setText("Something went wrong");
+                enterTranslationLabel.setText("Word has not been added");
             }
         }
         else {
             enterWordLabel.setVisible(false);
-            enterTranslationLabel.setText("Something went wrong");
+            enterTranslationLabel.setText("Fill in all fields");
         }
     }
 

@@ -35,6 +35,7 @@ public class JavaFxApp extends Application {
     public static void showDictionaryPage() throws IOException {
         Parent root = FXMLLoader.load(JavaFxApp.class.getResource("/org/example/dictionaryApp/DictionaryPage.fxml"));
         Scene scene = new Scene(root, WINDOW_WIDTH, WINDOW_HEIGHT);
+
         primaryStage.setScene(scene);
     }
     public static void showSecondPage() throws IOException {

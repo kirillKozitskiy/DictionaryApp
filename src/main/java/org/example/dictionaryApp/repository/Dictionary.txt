@@ -8,3 +8,5 @@
 дорога road
 машина vehicle
 пк PC
+папа dad
+брат brother
